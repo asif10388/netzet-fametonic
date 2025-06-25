@@ -1,15 +1,80 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #010101;
+  --foreground: #ffffff;
 }
 
 @theme inline {
+  /* Fonts */
+
+  --font-sans: var(--font-figtree);
+  --font-mono: var(--font-urbanist);
+
+  /* Colors */
+
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+
+  --color-primary-r-50: hsl(353.7 100% 96.3%);
+  --color-primary-r-100: hsl(354.7 100% 93.3%);
+  --color-primary-r-200: hsl(354.2 100% 85.7%);
+  --color-primary-r-300: hsl(353 100% 78.2%);
+  --color-primary-r-400: hsl(351.2 100% 69.4%);
+  --color-primary-r-500: hsl(341, 100%, 49%);
+  --color-primary-r-600: hsl(342.1 100% 40%);
+  --color-primary-r-700: hsl(342.9 100% 30.2%);
+  --color-primary-r-800: hsl(344.4 100% 21.2%);
+  --color-primary-r-900: hsl(347.6 100% 13.3%);
+  --color-primary-r-950: hsl(350.5 100% 8.6%);
+
+  --color-secondary-b-50: hsl(190 100% 96.5%);
+  --color-secondary-b-100: hsl(188.6 100% 94.5%);
+  --color-secondary-b-200: hsl(188 100% 88.2%);
+  --color-secondary-b-300: hsl(186.9 100% 77.8%);
+  --color-secondary-b-400: hsl(185.8 100% 65.3%);
+  --color-secondary-b-500: hsl(184 100% 49%);
+  --color-secondary-b-600: hsl(184.3 100% 38%);
+  --color-secondary-b-700: hsl(184.6 100% 28%);
+  --color-secondary-b-800: hsl(184.9 100% 19%);
+  --color-secondary-b-900: hsl(185.8 100% 10.2%);
+  --color-secondary-b-950: hsl(186 100% 5.9%);
+
+  --color-secondary-dark-b-50: hsl(192 100% 95.1%);
+  --color-secondary-dark-b-100: hsl(190.9 100% 91.4%);
+  --color-secondary-dark-b-200: hsl(189.8 100% 80.8%);
+  --color-secondary-dark-b-300: hsl(187.2 100% 62.5%);
+  --color-secondary-dark-b-400: hsl(186.2 88.8% 50.8%);
+  --color-secondary-dark-b-500: hsl(186 87% 47%); /* Gradient */
+  --color-secondary-dark-b-600: hsl(186.1 89.2% 36.5%);
+  --color-secondary-dark-b-700: hsl(185.8 92.6% 26.5%);
+  --color-secondary-dark-b-800: hsl(185.6 95.5% 17.5%);
+  --color-secondary-dark-b-900: hsl(187.7 95.9% 9.6%);
+  --color-secondary-dark-b-950: hsl(188.3 100% 5.7%);
+
+  --color-neutral-n-50: #f6f6f6;
+  --color-neutral-n-100: #eeeeee;
+  --color-neutral-n-200: #dddddd;
+  --color-neutral-n-300: #cccccc;
+  --color-neutral-n-400: #b9b9b9;
+  --color-neutral-n-500: #a9a9a9;
+  --color-neutral-n-600: #848484;
+  --color-neutral-n-700: #636363;
+  --color-neutral-n-800: #424242;
+  --color-neutral-n-900: #242424;
+  --color-neutral-n-950: #151515;
+
+  --color-muted-m-50: #f6f6f6;
+  --color-muted-m-100: #eeeeee;
+  --color-muted-m-200: #dddddd;
+  --color-muted-m-300: #cccccc;
+  --color-muted-m-400: #bbbbbb;
+  --color-muted-m-500: #ababab;
+  --color-muted-m-600: #868686;
+  --color-muted-m-700: #636363;
+  --color-muted-m-800: #424242;
+  --color-muted-m-900: #242424;
+  --color-muted-m-950: #151515;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -19,8 +84,16 @@
   }
 }
 
+/* * {
+  border: 1px solid greenyellow !important;
+} */
+
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.banner-gradient {
+  background: linear-gradient(90deg, var(--color-primary-r-500), var(--color-secondary-dark-b-500));
 }
