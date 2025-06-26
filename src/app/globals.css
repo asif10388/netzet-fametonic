@@ -9,7 +9,7 @@
   /* Fonts */
 
   --font-sans: var(--font-figtree);
-  --font-mono: var(--font-urbanist);
+  --font-heading: var(--font-urbanist);
 
   /* Colors */
 
@@ -33,7 +33,7 @@
   --color-secondary-b-200: hsl(188 100% 88.2%);
   --color-secondary-b-300: hsl(186.9 100% 77.8%);
   --color-secondary-b-400: hsl(185.8 100% 65.3%);
-  --color-secondary-b-500: hsl(184 100% 49%);
+  --color-secondary-b-500: hsl(184.3 100% 48.8%);
   --color-secondary-b-600: hsl(184.3 100% 38%);
   --color-secondary-b-700: hsl(184.6 100% 28%);
   --color-secondary-b-800: hsl(184.9 100% 19%);
@@ -96,4 +96,8 @@ body {
 
 .banner-gradient {
   background: linear-gradient(90deg, var(--color-primary-r-500), var(--color-secondary-dark-b-500));
+}
+
+.heading-text-shadow {
+  text-shadow: 0px 4px 4px #fc004e;
 }
