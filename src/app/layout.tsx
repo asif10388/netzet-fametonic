@@ -34,7 +34,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`relative ${figtree.variable} ${urbanist.variable} ${nunito.variable} max-w-[1440px] mx-auto`}
+        className={`relative ${figtree.variable} ${urbanist.variable} ${nunito.variable} lg:overflow-hidden max-w-[1440px] mx-auto`}
       >
         <Banner />
         <Navbar />
