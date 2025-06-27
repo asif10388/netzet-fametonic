@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <main className="sm:min-w-[1080px] sm:mx-[211px] flex flex-col font-[family-name:var(--font-figtree)] overflow-hidden">
       <div className="flex flex-col md:flex-row">
-        <div className="lg:flex-grow flex flex-col md:items-start md:text-left mt-[57px] text-center z-101 ml-1">
+        <div className="order-2 sm:order-1 lg:flex-grow flex flex-col md:items-start md:text-left sm:mt-[57px] text-center z-101 ml-1">
           <h1 className="order-1 text-3xl sm:text-[35px] font-bold font-[family-name:var(--font-urbanist)]">
             Want to Turn Social Media Into a <br className="hidden sm:inline-block" /> Profitable
             Career?
@@ -54,23 +54,23 @@ export default function Home() {
 
           <div className="px-6 sm:px-0 order-4 sm:order-5 mt-[29px] flex flex-col text-[12px] text-muted-m-500 sm:w-[516px]">
             <span className="leading-[14px] tracking-[0.1px] text-[12px]">
-              By clicking "Get Started", you agree with Terms and Conditions, Privacy Policy,
-              Subscription <br className="-mt-[15px] hidden sm:inline-block" /> Terms
+              By clicking &quot;Get Started&quot;, you agree with Terms and Conditions, Privacy
+              Policy, Subscription <br className="-mt-[15px] hidden sm:inline-block" /> Terms
             </span>
 
             <span className="text-[10px] mt-[11px]">Fametonic 2025 ©All Rights Reserved.</span>
           </div>
         </div>
 
-        {/* <div className="absolute top-[465px] right-[101px] -translate-y-1/2">
+        <div className="order-1 sm:order-2 relative sm:absolute sm:top-[465px] sm:right-[101px] sm:-translate-y-1/2 w-[390px] h-[426px] sm:w-[666px] sm:h-[679]">
           <Image
+            fill
             priority
-            width={666}
-            height={679}
             alt="Hero Image"
             src="/Influe_mobile_mockup_3_1.png"
+            className="w-full h-full object-contain object-center"
           />
-        </div> */}
+        </div>
       </div>
     </main>
   );
