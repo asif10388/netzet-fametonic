@@ -11,8 +11,8 @@ const featureList = [
 
 export default function Home() {
   return (
-    <main className="lg:min-w-[1080px] lg:mx-[211px] flex flex-col font-[family-name:var(--font-figtree)] overflow-hidden">
-      <div className="flex flex-col lg:flex-row">
+    <main className="relative w-full  font-[family-name:var(--font-figtree)]">
+      <div className="flex flex-col lg:flex-row lg:min-w-[1080px] lg:mx-[211px] relative z-10">
         <div className="order-2 lg:order-1 lg:flex-grow flex flex-col lg:items-start lg:text-left lg:mt-[57px] text-center z-101 ml-1">
           <h1 className="order-1 text-3xl lg:text-[35px] font-bold font-[family-name:var(--font-urbanist)]">
             Want to Turn Social Media Into a <br className="hidden lg:inline-block" /> Profitable
@@ -62,7 +62,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="order-1 relative mx-auto lg:order-2 lg:mx-0 lg:absolute lg:top-[465px] lg:right-[101px] lg:-translate-y-1/2 w-[390px] h-[426px] lg:w-[666px] lg:h-[679]">
+        {/* <div className="order-1 relative mx-auto lg:order-2 lg:mx-0 lg:absolute lg:top-[465px] lg:right-[101px] lg:-translate-y-1/2 w-[390px] h-[426px] lg:w-[666px] lg:h-[679]">
           <Image
             fill
             priority
@@ -70,6 +70,30 @@ export default function Home() {
             src="/Influe_mobile_mockup_3_1.png"
             className="w-full h-full object-contain object-center"
           />
+        </div> */}
+
+        {/* Mobile Version of Image (in flow for small screens) */}
+        <div className="order-1 lg:hidden mx-auto mt-10 w-[300px] h-[330px] relative">
+          <Image
+            fill
+            priority
+            alt="Mobile Hero"
+            src="/Influe_mobile_mockup_3_1.png"
+            className="object-contain"
+          />
+        </div>
+
+        {/* Large screen: absolutely positioned image */}
+        <div className="hidden lg:block">
+          <div className="absolute top-[310px] right-[-48px] -translate-y-1/2 w-[666px] h-[679px] z-[1]">
+            <Image
+              fill
+              priority
+              alt="Hero Image"
+              src="/Influe_mobile_mockup_3_1.png"
+              className="object-contain object-center"
+            />
+          </div>
         </div>
       </div>
     </main>
