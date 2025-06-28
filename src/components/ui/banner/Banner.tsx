@@ -13,8 +13,8 @@ const Banner = () => {
         className="lg:-mt-[4px] lg:mr-[6px]"
       />
 
-      <span className="text-[16px] lg:text-[22px] align-middle">
-        <span className="text-secondary-b-500 lg:pr-[1px] lg:inline-block font-bold">
+      <span className="text-[16px] lg:text-[22px] align-middle tracking-[0.1px]">
+        <span className="text-secondary-b-500 lg:inline-block font-bold">
           FRESH BEGINNINGS SALE:
         </span>{" "}
         <span>Extra 25% OFF, Limited Spots - start your journey today!</span>
