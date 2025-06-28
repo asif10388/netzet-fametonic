@@ -24,8 +24,8 @@ const Line = ({
         x2="19"
         y1="1.03597"
         y2="1.03597"
-        stroke-width="2"
-        stroke-linecap="round"
+        strokeWidth="2"
+        strokeLinecap="round"
         fill={fill || "currentColor"}
         stroke={stroke || "currentColor"}
       />

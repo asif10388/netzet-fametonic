@@ -27,15 +27,7 @@ export default function Home() {
           <ul className="order-3 p-4 lg:p-0 list-none mt-4 font-semibold text-[16px] leading-[22px] flex flex-col items-center lg:items-start gap-y-[12px] lg:w-[516px] -ml-[1px]">
             {featureList.map((feature, index) => (
               <li key={index} className="flex items-center gap-x-[10px]">
-                <div className="relative w-[23px] h-[23px] flex-shrink-0">
-                  <Image
-                    fill
-                    priority
-                    alt="Rocket Emoji"
-                    src="/sparkles.png"
-                    className="lg:-mt-[1.3px] object-contain object-center w-full h-full"
-                  />
-                </div>
+                <div className="relative w-[23px] h-[23px] flex-shrink-0">✨</div>
                 <span className="mt-[1px] opacity-90 text-left !lg:text-center">{feature}</span>
               </li>
             ))}
@@ -68,7 +60,8 @@ export default function Home() {
             fill
             priority
             alt="Mobile Hero"
-            src="/Influe_mobile_mockup_3_1.png"
+            src="/Influe_mobile_mockup_3_1_1.jpg"
+            sizes="(max-width: 768px) 100vw, 300px"
             className="object-contain object-center"
           />
         </div>
@@ -81,6 +74,7 @@ export default function Home() {
               priority
               alt="Hero Image"
               src="/Influe_mobile_mockup_3_1_1.jpg"
+              sizes="(max-width: 768px) 100vw, 666px"
               className="object-contain object-center"
             />
           </div>
