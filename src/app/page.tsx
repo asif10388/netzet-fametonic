@@ -13,13 +13,13 @@ export default function Home() {
   return (
     <main className="relative w-full font-[family-name:var(--font-figtree)]">
       <div className="flex flex-col lg:flex-row lg:min-w-[1080px] lg:mx-[211px] relative z-10">
-        <div className="order-2 lg:order-1 lg:flex-grow flex flex-col lg:items-start lg:text-left lg:mt-[57px] text-center z-101 ml-1">
-          <h1 className="order-1 text-3xl lg:text-[35px] font-bold font-[family-name:var(--font-urbanist)]">
+        <div className="px-[16px] lg:px-0 order-2 lg:order-1 lg:flex-grow flex flex-col lg:items-start lg:text-left lg:mt-[57px] text-center z-101 ml-1">
+          <h1 className="order-1 text-[25px] leading-[32px] lg:leading-[42px] lg:text-[35px] font-bold font-[family-name:var(--font-urbanist)]">
             Want to Turn Social Media Into a <br className="hidden lg:inline-block" /> Profitable
             Career?
           </h1>
 
-          <h2 className="order-2 text-3xl lg:text-[35px] font-bold font-[family-name:var(--font-urbanist)] text-secondary-b-500 heading-text-shadow">
+          <h2 className="order-2 text-[25px] leading-[32px] lg:leading-[42px] lg:text-[35px] font-bold font-[family-name:var(--font-urbanist)] text-secondary-b-500 heading-text-shadow">
             Discover your way to success
             <br className="hidden lg:inline-block" /> with Fametonic:
           </h2>
