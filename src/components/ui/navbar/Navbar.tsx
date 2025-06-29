@@ -19,11 +19,11 @@ const Navbar = () => {
         />
       </Link>
 
-      <div className="absolute top-[26%] right-[8%] lg:hidden flex flex-col items-center justify-center gap-y-[4px]">
+      <button className="absolute top-[26%] right-[8%] lg:hidden flex flex-col items-center justify-center gap-y-[4px]">
         <Line />
         <Line />
         <Line />
-      </div>
+      </button>
 
       <nav className="lg:ml-auto hidden lg:flex flex-wrap items-center justify-center text-[18px] font-semibold pr-[66px] -mt-[2px]">
         <Link href="/" className="text-neutral-n-500 mr-[46px]">
